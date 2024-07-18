@@ -1,3 +1,51 @@
+'July 18th'
+'Even Odd Calculator'
+
+def EvenOdd(userInput):
+    if (userInput%2==0):
+        return "Even";
+    else:
+        return "Odd";
+
+userInput=input("Welcome to Even Odd Program. Do you want to proceed?(y/n)");
+
+while userInput.lower()=="y":
+    try:
+        UserNumber=input("Enter the number. ");
+        EvenOddAns=EvenOdd(int(UserNumber));
+        print(f"The number is {EvenOddAns} ");
+    
+    except TypeError:
+        print("Should be a number. ");
+    except ValueError:
+        print("Should be a number. ");
+    userInput=input("Do you want to continue(y/n)?");
+
+'July 18th'
+'Perimeter of a Rectangle'
+""" 
+
+def calc_perimeter(rectBr,rectHt):
+    return 2*float(rectBr)+2*float(rectHt);
+
+userInput=input("Welcome to the calculator game! Do you want to continue(y/n): ")
+
+while userInput.lower()=="y":
+    try:
+        rectBr=input("Enter the breadth: ");
+        rectHt=input("Enter the height: ");
+        print(f"Perimeter is {calc_perimeter(rectBr,rectHt)}");
+    except TypeError:
+        print(" Values must be number. ");
+        continue;
+    except ValueError:
+        print(" Values must be number.");
+        continue;
+    userInput=input("Do you want to continue?(y/n)  "); 
+
+ """
+'July 17th'
+
 """ userInput ="Y"
 while(userInput=="y" or userInput =="Y"):
     
@@ -25,21 +73,3 @@ while(userInput=="y" or userInput =="Y"):
             exit;
 
  """
-
-def calc_perimeter(rectBr,rectHt):
-    return 2*float(rectBr)+2*float(rectHt);
-
-userInput=input("Welcome to the calculator game! Do you want to continue(y/n): ")
-
-while userInput.lower()=="y":
-    try:
-        rectBr=input("Enter the breadth: ");
-        rectHt=input("Enter the height: ");
-        print(f"Perimeter is {calc_perimeter(rectBr,rectHt)}");
-    except TypeError:
-        print(" Values must be number. ");
-        continue;
-    except ValueError:
-        print(" Values must be number.");
-        continue;
-    userInput=input("Do you want to continue?(y/n)  ");

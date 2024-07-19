@@ -1,4 +1,41 @@
+
+
+'July 1th'
+'List Ops'
+
+myNum = [1,2,3]
+myNumSq = [x*x for x in myNum]
+print(myNumSq)
+
+'July 19th'
+'Map functions'
+
+x=[1,2,3,4]
+
+def add(myNum):
+    return myNum*2;
+
+y=list(map(add,x));
+print (y)
+
+'July 19th'
+'Using lambda and Map'
+
+' x=[1,2,4,5,6]'
+' squareX= list(map(lambda x:x*x,x));'
+' print(squareX)'
+
+
+
 'July 18th'
+'Lambda Functions'
+
+""" x=10;y=10;
+mySum= lambda x,y:x+y;
+print(f"Sum is {mySum(x,y)}")
+ """
+
+""" 'July 18th'
 'Even Odd Calculator'
 
 def EvenOdd(userInput):
@@ -20,7 +57,7 @@ while userInput.lower()=="y":
     except ValueError:
         print("Should be a number. ");
     userInput=input("Do you want to continue(y/n)?");
-
+ """
 'July 18th'
 'Perimeter of a Rectangle'
 """ 

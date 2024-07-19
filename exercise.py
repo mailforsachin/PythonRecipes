@@ -1,6 +1,73 @@
 
 
-'July 1th'
+
+'July 19'
+'List Comparison'
+""" 
+countList1= input("How many numbers for List 1? ")
+countList2= input("How many numbers for List 2? ")
+
+myList1=[];
+myList2=[];
+
+try:
+    for x in range(int(countList1)):
+        addNoToList1= int(input("List 1: Enter the number. "));
+        myList1.append(addNoToList1)
+    for x in range(int(countList2)):
+        addNoToList2= int(input("List 2: Enter the number. "));
+        myList2.append(addNoToList2)
+    print(myList1, myList2)
+
+    for element in myList1:
+        if element in myList2:
+            print(f"Common element found: {element}")
+
+    myList1=set(myList1)
+    myList2=set(myList2)
+    commonElements =myList1.intersection(myList2)
+    print(f"Common elements is {commonElements}")
+
+except ValueError:
+    print("Value should be numbers. ")
+
+except TypeError:
+    print("Type should be numbers. ")
+
+
+ """
+
+'July 19'
+'Avg Min Max'
+""" import numpy as n
+myNum=input("How many numbers? ")
+count=1;
+try:
+    myList =[];
+    for i in range(int(myNum)):
+        popNumber=int(input("Enter number. "))
+        myList.append(int(popNumber))
+        print(myList)
+    mySum = sum(myList)
+    myAvg = n.average(myList)
+    myMax = n.max(myList)
+    myMin= n.min(myList)
+    print(f"Sum is {mySum}")
+    print(f"Average is {myAvg}, Minimum is {myMin} and Maximum is {myMax}")
+except ValueError:
+    print("Values are not numbers")
+
+except TypeError:
+    print("Values are not numbers");
+
+except:
+    print("Invalid Input. ")
+ """
+
+
+""" 
+
+'July 19th'
 'List Ops'
 
 myNum = [1,2,3]
@@ -17,7 +84,7 @@ def add(myNum):
 
 y=list(map(add,x));
 print (y)
-
+ """
 'July 19th'
 'Using lambda and Map'
 

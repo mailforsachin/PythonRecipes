@@ -1,5 +1,16 @@
+'July 20'
+'Classes'
+""" class calculator:
+    def __init__(self, number1, number2):
+        self.number1=number1;
+        self.number2=number2;
 
+    def add(number1, number2):
+        return number1+number2;
 
+addresult=calculator.add(10,10)
+print(addresult)
+ """ """ """
 
 'July 19'
 'List Comparison'
@@ -176,4 +187,5 @@ while(userInput=="y" or userInput =="Y"):
             print("Thank you for using the calculator");
             exit;
 
+ """
  """

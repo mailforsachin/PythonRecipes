@@ -204,3 +204,14 @@ else:
 #Alt
 input_str="saippuakivikauppias"
 print("Palindrome" if input_str == input_str[::-1] else "Not a palindrome")  """
+""" 
+a,b = 0, 1
+while a < 100:
+    print(a)
+    a, b = b, a+b """
+
+
+a,b=5,4
+while a <= 1:
+    print(a);
+a, b = b, b*(b-1)

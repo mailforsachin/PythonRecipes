@@ -36,7 +36,7 @@ def insert_track_details_into_db(track_details):
         conn = sqlite3.connect(config.DATABASE_LOCATION)
         cursor = conn.cursor()
         
-        # Create table if it doesn't exist
+        
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS Spotify_Offline_Db_Complete (
                 artist_name TEXT NOT NULL,
@@ -65,7 +65,7 @@ def insert_track_details_into_db(track_details):
         conn.close()
 
 if __name__ == "__main__":
-    folder_path = config.JSON_FOLDER_PATH  # Update your config to include the folder path
+    folder_path = config.JSON_FOLDER_PATH  
     json_files = glob.glob(os.path.join(folder_path, "*.json"))
 
     for json_file in json_files:

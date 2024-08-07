@@ -1,3 +1,5 @@
+# TEST SCRIPT , Doesnt work
+
 # prepare payload to spotify
 # read the album_artist
 # download json file

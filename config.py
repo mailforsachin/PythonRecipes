@@ -7,3 +7,7 @@ JSON_FOLDER_PATH = "C:\\Users\\sachi\\OneDrive\\Code\\PythonRecipes\\SpotifyAlbu
 CHECK_DIR = "C:\\Users\\sachi\\OneDrive\\Code\\PythonRecipes\\SpotifyAlbum\\"
 CLIENT_ID = 'xxx'
 CLIENT_SECRET = 'xxx'
+#Azure DevOps
+PAT=""
+ORG_URL="https://dev.azure.com/PamTen"
+#

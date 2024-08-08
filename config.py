@@ -5,3 +5,5 @@ CLIENT_SECRET = '64892b3cb41e41f1bce64850e1a2f92d'
 OUTPUT_DIR = "C:\\Users\\sachi\\OneDrive\\Code\\PythonRecipes\\SpotifyAlbum\\"
 JSON_FOLDER_PATH = "C:\\Users\\sachi\\OneDrive\\Code\\PythonRecipes\\SpotifyAlbum\\"
 CHECK_DIR = "C:\\Users\\sachi\\OneDrive\\Code\\PythonRecipes\\SpotifyAlbum\\"
+CLIENT_ID = 'xxx'
+CLIENT_SECRET = 'xxx'

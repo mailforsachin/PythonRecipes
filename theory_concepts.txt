@@ -1,0 +1,21 @@
+str_who="jane"
+str_howmany ="10"
+
+print("{} bought {} apples today".format(str_who, str_howmany))
+print(f"{str_who} bought {str_howmany} apples today")
+
+#DATABASE 
+# import db
+# establish connection
+# establish cursor
+# use cursor and execute
+
+import sqlite3
+
+conn=sqlite3.connect(DATABASE_LOCATION)
+curs=connection.cursor()
+curs.execute("select * from tablename)
+
+conn=sqlite3.connect(config.DATABASE_LOCATION)
+cursor=conn.cursor();
+cursor.execute('''drop table users''')

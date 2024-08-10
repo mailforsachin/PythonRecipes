@@ -17,14 +17,15 @@ print("class variable from outside class:",t.i)
 
 # nothing, inside display method: inside method, inside put method:outside class, outside class, class variable from outside class: inside class """
 
-""" 
-class test:
+""" class test:
     val=10
     def display(self):
         print("val=", self.val);
 t=test()
 print(test.val)
 t.display()
+ """
+"""
 
 
 class test:
@@ -36,7 +37,7 @@ print(test.val)
 t.display(100) """
 
 #6th August
-class test:
+""" class test:
     def _new_(cls):
         print("creating object")
     def test(self, val=8):
@@ -44,3 +45,29 @@ class test:
         print(f"initialisation{val}")
 test.test(8)
 t=test()
+ """
+""" class test:
+    val=10
+    def display(self,val):
+        print("val=", val)
+        t=test();
+        print(test.val)
+        t.display();
+
+t=test()
+t.i=100; """
+
+class test:
+    def display(self):
+        print("istance method")
+    @classmethod
+    def put(cls):
+        print("class method")
+    @staticmethod
+    def function():
+        print("static method")
+t=test()
+t.display()
+test.put()
+test.function()
+
